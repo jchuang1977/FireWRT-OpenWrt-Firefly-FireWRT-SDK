@@ -89,8 +89,7 @@ detect_mac80211() {
 		cap_5ghz=$(iw phy "$dev" info | grep -c "Band 2")
 		[ "$vht_cap" -gt 0 -a "$cap_5ghz" -gt 0 ] && {
 			mode_band="a";
-			channel="149"
-			country="US"
+			channel="36"
 			htmode="VHT80"
 		}
 
@@ -115,8 +114,6 @@ config wifi-device  radio$devidx
 	option hwmode	11${mode_band}
 $dev_id
 $ht_capab
-	# REMOVE THIS LINE TO ENABLE WIFI:
-	option disabled 0
 
 config wifi-iface
 	option device   radio$devidx
