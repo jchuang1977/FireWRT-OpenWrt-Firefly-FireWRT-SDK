@@ -16,3 +16,4 @@ src-git firefly_packages https://github.com/FireWRT/OpenWrt-Firefly-Packages.git
 #src-link custom /usr/src/openwrt/custom-feed
 src-git ramod git://github.com/ravageralpha/my_openwrt_mod.git
 src-git extra git://github.com/nanpuyue/openwrt-extra.git
+src-git softethervpn https://github.com/el1n/OpenWRT-package-softether.git
